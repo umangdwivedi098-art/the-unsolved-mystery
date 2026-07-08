@@ -1,0 +1,221 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#0d0d0d;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+z-index:1000;
+box-shadow:0 0 15px rgba(255,215,0,.2);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-family:Cinzel,serif;
+font-weight:bold;
+color:gold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:gold;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:linear-gradient(135deg,#000,#1c1c1c);
+}
+
+.author{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid gold;
+box-shadow:0 0 35px gold;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:55px;
+font-family:Cinzel,serif;
+color:gold;
+}
+
+.hero h2{
+margin-top:10px;
+font-size:28px;
+}
+
+.hero p{
+margin:25px auto;
+max-width:700px;
+font-size:18px;
+line-height:1.8;
+}
+
+.buttons a{
+display:inline-block;
+padding:14px 28px;
+margin:10px;
+background:gold;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:.4s;
+}
+
+.buttons a:hover{
+background:black;
+color:gold;
+border:2px solid gold;
+transform:translateY(-5px);
+}
+
+.about,
+.book,
+.contact{
+padding:110px 10%;
+}
+
+.about h2,
+.book h2,
+.contact h2{
+text-align:center;
+font-size:42px;
+font-family:Cinzel,serif;
+color:gold;
+margin-bottom:60px;
+}
+
+.about-box,
+.book-card{
+display:flex;
+align-items:center;
+gap:50px;
+background:#181818;
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,215,0,.2);
+}
+
+.about-box img{
+width:280px;
+border-radius:20px;
+}
+
+.book-card img{
+width:260px;
+border-radius:15px;
+box-shadow:0 0 25px gold;
+}
+
+.about p,
+.book p{
+font-size:18px;
+line-height:2;
+}
+
+.book h3{
+font-size:34px;
+color:gold;
+margin-bottom:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact h3{
+margin:15px 0 30px;
+font-size:26px;
+color:gold;
+}
+
+footer{
+background:#111;
+padding:30px;
+text-align:center;
+border-top:2px solid gold;
+}
+
+footer p{
+color:#ccc;
+line-height:2;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:40px;
+}
+
+.about-box,
+.book-card{
+flex-direction:column;
+text-align:center;
+}
+
+.about-box img,
+.book-card img{
+width:220px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+margin:10px;
+}
+
+.author{
+width:170px;
+height:170px;
+}
+
+}
